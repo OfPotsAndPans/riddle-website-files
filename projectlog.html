@@ -2,79 +2,199 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Project Logs</title>
+</head>
+<style>
+    /* Style page content */
+    .main {
+        margin-left: 203px; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+        font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+    }
+    @font-face {
+            font-family: 'Berthold-Akzidenz-Grotesk-Light-Extended';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Berthold Akzidenz Grotesk'),
+            url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.eot"), 
+            url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.woff") format("woff"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2b2a97ab2c967477de4f982e36c934b6.svg#Berthold Akzidenz Grotesk BE") format("svg"); 
+        }
+    .list-bg-colors {
+            color:rgb(246,245,240);
+            
+    }
+    .nav-title {
+            top: 0px; 
+/*            position: fixed;*/
+            font-size: 22px;
+            line-height: 35px;
+            width:25vw;
+            font-style: italic;
+            color:rgb(246,245,240);
+            display: inline-block;
+        }
+    .sidenav {
 
-<body>
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 203px; /* Set the width of the sidebar */
+        position: fixed;  /*Fixed Sidebar (stay in place on scroll) */
+/*        z-index: 10;  Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 20px;
+        
+}
 
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(246,245,240);
+    display: block;
+}
 
-    <head>
-        <title>Project Logs</title>
-    </head>
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(229,91,126);
+}
+    body{
+/*        background: rgb(229,91,126);*/
+        background: linear-gradient(to top, rgb(78, 172, 1) 50%, rgb(229,91,126) 50%);
+    }
+    .para-title{
+        color:rgb(246,218,115);
+        font-size:16px;
+        font-weight:normal;
+        font-style:italic;
+        text-align:left;
+    }
+    .para-body{
+        color: rgb(0,0,0);
+        font-size:14px;
+        font-weight:normal;
+        text-align:left;
+    }
+/*
+    .page-list{
+        top: 10;
+        left: 30px;
+        position: fixed;
+    }
+*/
 
-    <p style="color:#003399;font-size:18px;font-weight:bold;text-align:center;">
-        Project Logs for July 2019
-    </p>
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+}
+    
+</style>
+    
+<div class="main">
+<body> 
+   
+    <!-- Side navigation -->
+<div class="sidenav">
+     <div>
+         <a href="index.html"><div class="nav-title">SALAM<br>BDEIR</div></a>
+    </div>
+  <a href="index.html"; class="list-bg-colors">Home</a>
+  <a href="projectlog.html"; class="list-bg-colors">My logs</a>
+  <a href="underconstruction.html"; class="list-bg-colors">My projects</a>
+  <a href="underconstruction.html"; class="list-bg-colors">Contact me</a>
+</div>
+    
+    
+      <p style="color:rgb(246,218,115);font-size:38px;font-weight:bold;text-align:center;">
+        Project Logs</p>
+    
+<!--
+    <div class="w3-display-topleft; w3-padding-large; w3-xlarge; page-list">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projectlog.html">My logs</a></li>
-                <li><a href="underconstruction.html">My projects</a></li>
-                <li><a href="underconstruction.html">Contact me</a></li>
+            <ul style="list-style-type:none;">
+                <li><a href="index.html"; class="list-bg-colors">Home</a></li>
+                <li><a href="projectlog.html"; class="list-bg-colors">My logs</a></li>
+                <li><a href="underconstruction.html"; class="list-bg-colors">My projects</a></li>
+                <li><a href="underconstruction.html"; class="list-bg-colors">Contact me</a></li>
             </ul>
         </nav>
     </div>
+-->
 
-    <p style=”color:#454545;font-size:16px;font-weight:normal;font-style:italic;text-align:left;”>Latest Updates</p>
-
-
-    <p style=”color:#000;font-size:14px;font-weight:normal;text-align:left;”>
-
-        <strong>July 9, 2019:</strong> After 17, almost continuous, hours I uploaded my first <a href="https://www.foryoureyesonly.cf/" target="_blank">website</a> after deciding to learn how to create a website with HTML and CSS.</p>
-
-
-    <p style=”color:#000;font-size:14px;font-weight:normal;text-align:left;”>
-
-        <strong>July 10, 2019:</strong> I decided to learn how to host my own website <em>whynotme.cf</em> from home and successfully hosted it for the world to see for a brief period of time. However, until I figure out how to properly secure my home
-        network from potential security threats it shall only be accessable if a user is on my own private network. Click <a href=”/writing/poems.html” target=”_blank”>here</a> to visit a direct replica of that website.</p>
-
-
-    <p style=”color:#000;font-size:14px;font-weight:normal;text-align:left;”>
-
-        <strong>July 12, 2019:</strong> I began to teach myself javascript so I may incorporate it into my websites and continued to improve upon my first <a href=”/Users/salambdeir/Desktop/index.html” target=”_blank”>website</a>. Trying to incorporate
-        javascript into my second <a href=”/artwork/sketches.html” target=”_blank”>website</a> has been frustrating to figure out what possible issues are preventing my code from working.
+     <p style="color:rgb(246,218,115);font-size:38px;font-weight:bold;text-align:left;">
+        Project Logs for my Django Server Project
     </p>
+    <p class="para-title">Latest Update</p>
+      <p class="para-body">
 
-    <p style=”color:#000;font-size:14px;font-weight:normal;text-align:left;”>
+          <strong>May 31, 2020:</strong> I started learning about how to run a Django server through my Raspberry Pi. Tomorrow I will set up my server with a “get endpoint" function and have my button makes call to the IP address for my Pi to trigger the code. I have a pretty good understanding of how to port forward my router to allow requests to go to my Pi from when I set up my Pi to host my website last summer so I don't anticipate any issues setting that up. </p>
+    
+    <p style="color:rgb(246,218,115);font-size:38px;font-weight:bold;text-align:left;">
+        Project Logs for my Chrome Extention
+    </p>
+    <p class="para-title">Latest Update</p>
+      <p class="para-body">
+
+        <strong>May 30, 2020:</strong> My Chrome extention successfully tracks the time spent on websites and now includes a button next to each site tracked allowing the user to enable or disable the ability to visit that site if the user feels they are spending too much time on that site.</p>
+    
+    <p class="para-body">
+
+        <strong>April 16, 2020:</strong> I started work on a Chrome extention that will track the time the user spends on each website they visit and display in a table the site domain, time spent, and the initial and last date of access in a table for the user to see.</p>
+    <br> <br> <br> <br> <br> <br> <br><br><br><br>
+    <p style="color:rgb(246,218,115);font-size:38px;font-weight:bold;text-align:left;">
+        Project Logs for this website
+    </p>
+    <p class="para-title">Latest Update</p>
+    <p class="para-body">
+
+        <strong>May 31, 2020:</strong> Now that Summerbreak has started for me I can comeback to this website and greatly improve upon it. I learned a lot more about HTML and CSS through an Advanced Web Scraping course I took last semester so I am coming back to this project with a bunch of ideas for how to improve this site's code. The first thing I plan on doing is to move all the styling and in-line CSS to a dedicated CSS script. This will give my site an unified look and help me to navigate the css for each page much easier. <br>After I complete this I will start preparing my "Projects" tab that has been "under construction" since this website first went live. The purpose of the page is to showcase the projects I worked on with descriptions of the projects, links to them (if possible), and of course, images. </p>
+   
+    <p class="para-body">
+
+        <strong>July 16, 2019:</strong> My website has undergone some major changes. Now links redirect to other parts of this website; including this one before hand this page was not hosted on the website at all. A completely redesigned homepage and personality have been adapted. 
+        I am continuing to familarize myself with HTML, CSS and Javascript. Eventually I hope to incorporate some Javascripts I am working on. In addition, I am also working on embedding a few Java programs I have made in the past directly onto my website. </p>
+
+    <p class="para-body">
 
         <strong>July 13, 2019:</strong> After deploying from a new repository with updated HTML and CSS files for my website, the deployment status started showing as failed with the presence of error:
         <em>failed during stage 'building site': Build script returned non-zero exit code: 1</em> The link to my domain was unreachable and I had to resort to an old deployment of the website while I figured out how I lost the 'build' command in my package.
         This could have been a result of me messing around with github's different tabs. I created 'branches' but I don't understand how to use them yet. For the time being, my solution was to delete the repository and re-upload my files in a new repository.
         with solved the issue. to view my
-        <a href=”/Users/salambdeir/Desktop/index.html” target=”_blank”>website</a> click here. Trying to incorporate javascript into my second
+        <a href=”/Users/sb/Desktop/index.html” target=”_blank”>website</a> click here. Trying to incorporate javascript into my second
         <a href=”/artwork/sketches.html” target=”_blank”>website</a> has been frustrating to figure out what possible issues are preventing my code from working.
     </p>
- 
-    <p style=”color:#000;font-size:14px;font-weight:normal;text-align:left;”>
+    
+    <p class="para-body">
 
-        <strong>July 16, 2019:</strong> My website has undergone some major changes. Now links redirect to other parts of this website; including this one before hand this page was not hosted on the website at all. A completely redesigned homepage and personality have been adapted. 
-        I am continuing to familarize myself with HTML, CSS and Javascript. Eventually I hope to incorporate some Javascripts I am working on. In addition, I am also working on embedding a few Java programs I have made in the past directly onto my website. </p>
+        <strong>July 12, 2019:</strong> I began to teach myself javascript so I may incorporate it into my websites and continued to improve upon my first <a href=”/Users/sb/Desktop/index.html” target=”_blank”>website</a>. Trying to incorporate
+        javascript into my second <a href=”/artwork/sketches.html” target=”_blank”>website</a> has been frustrating to figure out what possible issues are preventing my code from working.
+    </p>
+    
+    <p class="para-body">
 
+        <strong>July 10, 2019:</strong> I decided to learn how to host my own website <em>whynotme.cf</em> from home and successfully hosted it for the world to see for a brief period of time. However, until I figure out how to properly secure my home
+        network from potential security threats it shall only be accessable if a user is on my own private network. Click <a href=”/writing/poems.html” target=”_blank”>here</a> to visit a direct replica of that website.</p>
+    
+    <p class="para-body">
 
-    <h2 style="color:rgb(113,231,35);"> I would love to hear your feedback!</h2>
-    <form>
-        <input placeholder="Your name " type="text " name="myfriendname ">
-        <input placeholder="Your email address " type="email " name="email-address ">
-        <textarea name="comment ">Type your comments here</textarea>
-        <input type="submit" name="submit " value="Send ">
-
-    </form>
+        <strong>July 9, 2019:</strong> After 17, almost continuous, hours I uploaded my first <a href="https://www.foryoureyesonly.cf/" target="_blank">website</a> after deciding to learn how to create a website with HTML and CSS.</p>
+   
+    
+  
+    
+    
 </body>
 
 <p>
+    <br><br><br>
 </p>
 
-<div class="w3-display-bottomright w3-padding-large">
+<div class="w3-display-bottomright">
     Powered by <a href="https://thispersondoesnotexist.com/" target="_blank">no.one</a>
 </div>
-
+</div>
 </html>
